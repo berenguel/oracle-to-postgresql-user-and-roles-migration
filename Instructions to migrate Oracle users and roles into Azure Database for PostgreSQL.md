@@ -87,12 +87,6 @@ Let's setup the ora2pg config file in order to enable users, roles and grants ex
 ### Step 3: Run ora2pg to export users and grants to a file ###
 
 
-     - On “**cmd**”,  navigate to your ora2pg folder
-        
-     ~~~
-     cd c:\ora2pg
-     ~~~
-
 	- Run the command to create a script with the users, roles and grants
      ~~~
      ora2pg -p -t GRANT -o grant.sql -b c:\demo\demo_mig\schema\grants -c C:\demo\demo_mig\config\demo_conf.conf	
