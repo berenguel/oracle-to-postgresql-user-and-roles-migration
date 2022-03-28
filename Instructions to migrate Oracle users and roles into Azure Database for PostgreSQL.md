@@ -49,6 +49,8 @@ This is not a mandatory step. This is a best practice for organising the output 
      ora2pg --project_base c:\demo -c c:\demo\ora2pg.conf --init_project demo_mig
 	 ~~~
 
+
+
 **Summary:** In this step, you learnt how to create a project base for the migration project. Note that the path c:\demo has to be created manually.
 
 
