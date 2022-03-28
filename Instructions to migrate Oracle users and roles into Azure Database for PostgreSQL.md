@@ -38,13 +38,13 @@ This is not a mandatory step. This is a best practice for organising the output 
 1. Let's create our project base for the migration:
 
 
-     - On “**cmd**”,  navigate to ora2pg folder
-     - Run the command to create a migration template
-
+     - On “**cmd**”,  navigate to your ora2pg folder
         
      ~~~
      cd c:\ora2pg
      ~~~
+	 
+	- Run the command to create a migration template
      ~~~
      ora2pg --project_base c:\demo -c c:\demo\ora2pg.conf --init_project demo_mig
 	 ~~~
