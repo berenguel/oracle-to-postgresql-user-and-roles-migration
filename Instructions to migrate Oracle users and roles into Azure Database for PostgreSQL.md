@@ -1,4 +1,4 @@
-How to migrate users and roles from Oracle to Azure Database for PostgreSQL using ora2pg 
+How to migrate users, roles and grants from Oracle to Azure Database for PostgreSQL using ora2pg 
 ---
 
 **Introduction**
@@ -16,7 +16,6 @@ This document highlights how to migrate oracle users and roles using ora2pg
   
 
 **Estimated Time**
-
 5 minutes
 
 
@@ -26,6 +25,8 @@ This document highlights how to migrate oracle users and roles using ora2pg
 * *ora2pg is already installed in either Linux or Windows computer/machine*
 
 * *Azure Database for PostgreSQL is provisioned*
+
+* *An Oracle user with DBA role is necessary to perform this task*
  
 
 
