@@ -81,6 +81,8 @@ Let's setup the ora2pg config file in order to enable users, roles and grants ex
 	 ~~~
 		TYPE	TABLE PACKAGE VIEW GRANT SEQUENCE TRIGGER FUNCTION PROCEDURE TYPE PARTITION FDW MVIEW
 	 ~~~
+	 ~~~
+	 ~~~
 	 
 	 
 **Summary:** The config file is ready. 
