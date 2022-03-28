@@ -11,7 +11,7 @@ This document highlights how to migrate oracle users and roles using ora2pg
 
 * step 3: Run ora2pg to export users and grants to a file
 
-* step 4: execute file on Azure Database for PostgreSQL
+* step 4: execute output file ("grants.sql") against Azure Database for PostgreSQL
 
   
 
@@ -38,7 +38,6 @@ This is not a mandatory step. This is a best practice for organising the output 
 1. Let's create our project base for the migration:
 
 
- - [x] Task:
      - On “**cmd**”,  navigate to ora2pg folder
      - Run the command to create a migration template
 
@@ -48,7 +47,6 @@ This is not a mandatory step. This is a best practice for organising the output 
      ~~~
      ~~~
      ora2pg --project_base c:\demo -c c:\demo\ora2pg.conf --init_project demo_mig
-     ~~~
 	 ~~~
 
 **Summary:** In this exercise, you learnt how to create a project base for the migration project. Note that the path c:\demo has to be created manually.
