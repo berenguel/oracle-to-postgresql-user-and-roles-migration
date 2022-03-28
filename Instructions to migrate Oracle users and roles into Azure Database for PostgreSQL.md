@@ -49,7 +49,7 @@ This is not a mandatory step. This is a best practice for organising the output 
      ora2pg --project_base c:\demo -c c:\demo\ora2pg.conf --init_project demo_mig
 	 ~~~
 
-**Summary:** In this exercise, you learnt how to create a project base for the migration project. Note that the path c:\demo has to be created manually.
+**Summary:** In this step, you learnt how to create a project base for the migration project. Note that the path c:\demo has to be created manually.
 
 
 
@@ -60,27 +60,29 @@ Let's setup the ora2pg config file in order to enable users, roles and grants ex
   
    - first, set the connection parameters in the ora2pg file to connect to the desired Oracle database.
    
-    
-   
-		# Set the Oracle home directory
+     ~~~
 		ORACLE_HOME	C:\Users\corp\oracle\db_home
-
-		# Set Oracle database connection (datasource, user, password)
 		ORACLE_DSN	dbi:Oracle:host=localhost;sid=myoradb;port=1521
 		ORACLE_USER	system
 		ORACLE_PWD	manager
+	 ~~~		
 
    - After that, set the necessary grant extraction parameters. 
    
-
+	 ~~~
 		USER_GRANTS     0
-		
+	 ~~~
+	
+	 ~~~
 		TYPE GRANT
+	 ~~~		
 		
 		OR
-
+	 ~~~
 		TYPE	TABLE PACKAGE VIEW GRANT SEQUENCE TRIGGER FUNCTION PROCEDURE TYPE PARTITION FDW MVIEW
-		
+	 ~~~	
+	 
+	 
 	Make sure on the TYPE parameter, you include at least GRANT but it works with a list of objects as well.		
 		
 	
