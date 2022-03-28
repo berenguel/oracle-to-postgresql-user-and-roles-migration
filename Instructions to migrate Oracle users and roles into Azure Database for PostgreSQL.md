@@ -80,7 +80,8 @@ Let's setup the ora2pg config file in order to enable users, roles and grants ex
 		OR
 	 ~~~
 		TYPE	TABLE PACKAGE VIEW GRANT SEQUENCE TRIGGER FUNCTION PROCEDURE TYPE PARTITION FDW MVIEW
-	 ~~~	
+	 ~~~
+	 ~~~	 
 	 
 	 
 	Make sure on the TYPE parameter, you include at least GRANT but it works with a list of objects as well.		
