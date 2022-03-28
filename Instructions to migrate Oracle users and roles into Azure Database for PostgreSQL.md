@@ -88,9 +88,9 @@ Let's setup the ora2pg config file in order to enable users, roles and grants ex
 
 
 	- Run the command to create a script with the users, roles and grants
-     ~~~
+    
      ora2pg -p -t GRANT -o grant.sql -b c:\demo\demo_mig\schema\grants -c C:\demo\demo_mig\config\demo_conf.conf	
-     ~~~
+     
 
 
 
