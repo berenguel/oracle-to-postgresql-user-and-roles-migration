@@ -67,7 +67,7 @@ Let's setup the ora2pg config file in order to enable users, roles and grants ex
 		ORACLE_PWD	manager
 	 ~~~		
 
-   - After that, set the necessary grant extraction parameters. 
+   - After that, set the necessary grant extraction parameters. Make sure on the TYPE parameter, you include at least GRANT but it works with a list of objects as well.	
    
 	 ~~~
 		USER_GRANTS     0
@@ -81,14 +81,8 @@ Let's setup the ora2pg config file in order to enable users, roles and grants ex
 	 ~~~
 		TYPE	TABLE PACKAGE VIEW GRANT SEQUENCE TRIGGER FUNCTION PROCEDURE TYPE PARTITION FDW MVIEW
 	 ~~~
-	 ~~~	 
 	 
 	 
-	Make sure on the TYPE parameter, you include at least GRANT but it works with a list of objects as well.		
-		
-	
-
-
 **Summary:** The config file is ready. 
      
 ### Step 3: Run ora2pg to export users and grants to a file ###
